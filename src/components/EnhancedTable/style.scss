@@ -1,0 +1,48 @@
+.tool-bar {
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 8px;
+
+  border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.tool-bar__title {
+  align-self: flex-start;
+}
+
+// table
+
+.enhanced-table {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 800px;
+}
+
+.enhanced-table__container {
+  max-height: 440px;
+}
+
+.enhanced-table__paper {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.enhanced-table__table {
+  min-width: 600px;
+}
+
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  width: 1px;
+
+}
+

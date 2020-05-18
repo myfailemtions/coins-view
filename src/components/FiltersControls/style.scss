@@ -1,0 +1,23 @@
+.filters-controls {
+  display: flex;
+  width: 100%;
+
+  & .filters-controls__favorite {
+    width: auto;
+    margin-right: 30px;
+  }
+
+  & .filters-controls__selects-group {
+    margin-left: auto;
+  }
+
+  & .filters-controls__select:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  & .filters-controls__select {
+    min-width: 100px;
+  }
+}
+
+

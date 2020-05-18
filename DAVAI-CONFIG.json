@@ -1,0 +1,13 @@
+{
+  "PROJECT_NAME": "ICWT-Europe BitViewer",
+  "STARTUP_BRANCH": "master",
+  "VERSION_FILE": "VERSION",
+  "GIT_RELEASE_BRANCH_NAME_BASE": "release",
+  "GIT_RELEASE_TAG_NAME_BASE": "build",
+  "EMAIL_CONFIG": {
+    "LOGIN": "ivan.ukhov@incodewetrust.ru",
+    "PASS": "icwt@2020",
+    "SERVICE": "Yandex",
+    "SENDER_LIST": "ararat@incodewetrust.ru, finance@incodewetrust.ru, accountant@incodewetrust.ru, beryozka_o.o@mail.ru"
+  }
+}

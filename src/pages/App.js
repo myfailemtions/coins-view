@@ -3,7 +3,6 @@ import { fetchProducts, fetchPrice } from '../services/products'
 import { mergeData } from '../utils/mergeData'
 import { formatData } from '../utils/formatData'
 import EnhancedTable from '../components/EnhancedTable/EnhancedTable'
-import './App.scss'
 
 const formatDataForTable = (data) => {
   return data.map((item) => ({

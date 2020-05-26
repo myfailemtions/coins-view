@@ -46,7 +46,6 @@ const App = () => {
   useEffect(() => {
     async function fetchData() {
       const products = await fetchProducts()
-      console.log(products)
       fetchPrice().onmessage = ({ data }) => {
         const mergedData = mergeData({ products, price: JSON.parse(data) })
         const decryptedData = formatData(mergedData)
@@ -80,7 +79,6 @@ const App = () => {
   }
 
   const toggleShowFavorite = () => {
-    console.log(favoriteList)
     setShowFavorite(!showFavorite)
   }
 

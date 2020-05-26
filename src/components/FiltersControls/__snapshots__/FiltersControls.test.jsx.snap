@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly FiltersControls 1`] = `
+<div
+  className="MuiBox-root MuiBox-root-2 filters-controls"
+>
+  <button
+    aria-label="favorites"
+    className="MuiButtonBase-root MuiIconButton-root filters-controls__favorite MuiIconButton-colorSecondary"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiIconButton-label"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+        />
+      </svg>
+    </span>
+  </button>
+  <div
+    className="MuiButtonGroup-root filters-controls__buttons-group MuiButtonGroup-disableElevation MuiButtonGroup-contained"
+    role="group"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContained MuiButton-containedSizeSmall MuiButton-sizeSmall MuiButton-disableElevation"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        BNB
+      </span>
+    </button>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContained MuiButton-containedSizeSmall MuiButton-sizeSmall MuiButton-disableElevation"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        BTC
+      </span>
+    </button>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-77 filters-controls__selects-group"
+  >
+    <div
+      className="MuiFormControl-root filters-controls__select"
+    >
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        data-shrink={false}
+        id="alts-select-label"
+      >
+        ALTS
+      </label>
+      <div
+        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
+      >
+        <div
+          aria-haspopup="listbox"
+          aria-labelledby="alts-select-label alts-select"
+          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+          id="alts-select"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "&#8203;",
+              }
+            }
+          />
+        </div>
+        <input
+          onAnimationStart={[Function]}
+          type="hidden"
+        />
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      className="MuiFormControl-root filters-controls__select"
+    >
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+        data-shrink={false}
+        id="usds-select-label"
+      >
+        USDS
+      </label>
+      <div
+        className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+        onClick={[Function]}
+      >
+        <div
+          aria-haspopup="listbox"
+          aria-labelledby="usds-select-label usds-select"
+          className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+          id="usds-select"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseDown={[Function]}
+          role="button"
+          tabIndex={0}
+        >
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "&#8203;",
+              }
+            }
+          />
+        </div>
+        <input
+          onAnimationStart={[Function]}
+          type="hidden"
+        />
+        <svg
+          aria-hidden={true}
+          className="MuiSvgIcon-root MuiSelect-icon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;

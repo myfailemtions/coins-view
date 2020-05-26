@@ -1,40 +1,40 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TablePagination from "@material-ui/core/TablePagination";
-import TableRow from "@material-ui/core/TableRow";
-import TableSortLabel from "@material-ui/core/TableSortLabel";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
-import Checkbox from "@material-ui/core/Checkbox";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Switch from "@material-ui/core/Switch";
+import React from 'react'
+import PropTypes from 'prop-types'
+import Table from '@material-ui/core/Table'
+import TableBody from '@material-ui/core/TableBody'
+import TableCell from '@material-ui/core/TableCell'
+import TableContainer from '@material-ui/core/TableContainer'
+import TableHead from '@material-ui/core/TableHead'
+import TablePagination from '@material-ui/core/TablePagination'
+import TableRow from '@material-ui/core/TableRow'
+import TableSortLabel from '@material-ui/core/TableSortLabel'
+import Toolbar from '@material-ui/core/Toolbar'
+import Typography from '@material-ui/core/Typography'
+import Paper from '@material-ui/core/Paper'
+import Checkbox from '@material-ui/core/Checkbox'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
+import Switch from '@material-ui/core/Switch'
 
-import ButtonsControls from "../ButtonsControls/ButtonsControls";
-import { getComparator, stableSort } from "../../utils/helpers";
+import ButtonsControls from '../ButtonsControls/ButtonsControls'
+import { getComparator, stableSort } from '../../utils/helpers'
 
-import "./style.scss";
+import './style.scss'
 
 const headCells = [
-  { id: "pair", numeric: false, disablePadding: true, label: "Pair" },
+  { id: 'pair', numeric: false, disablePadding: true, label: 'Pair' },
   {
-    id: "lastPrice",
+    id: 'lastPrice',
     numeric: true,
     disablePadding: false,
-    label: "Last Price",
+    label: 'Last Price'
   },
-  { id: "change", numeric: true, disablePadding: false, label: "Change" },
-];
+  { id: 'change', numeric: true, disablePadding: false, label: 'Change' }
+]
 
 const EnhancedTableHead = ({ order, orderBy, onRequestSort }) => {
   const createSortHandler = (property) => (event) => {
-    onRequestSort(event, property);
-  };
+    onRequestSort(event, property)
+  }
 
   return (
     <TableHead>
@@ -45,19 +45,19 @@ const EnhancedTableHead = ({ order, orderBy, onRequestSort }) => {
         {headCells.map(({ id, numeric, disablePadding, label }) => (
           <TableCell
             key={id}
-            align={numeric ? "right" : "left"}
-            padding={disablePadding ? "none" : "default"}
+            align={numeric ? 'right' : 'left'}
+            padding={disablePadding ? 'none' : 'default'}
             sortDirection={orderBy === id ? order : false}
           >
             <TableSortLabel
               active={orderBy === id}
-              direction={orderBy === id ? order : "asc"}
+              direction={orderBy === id ? order : 'asc'}
               onClick={createSortHandler(id)}
             >
               {label}
               {orderBy === id ? (
                 <span className="visuallyHidden">
-                  {order === "desc" ? "sorted descending" : "sorted ascending"}
+                  {order === 'desc' ? 'sorted descending' : 'sorted ascending'}
                 </span>
               ) : null}
             </TableSortLabel>
@@ -65,14 +65,14 @@ const EnhancedTableHead = ({ order, orderBy, onRequestSort }) => {
         ))}
       </TableRow>
     </TableHead>
-  );
-};
+  )
+}
 
 EnhancedTableHead.propTypes = {
   onRequestSort: PropTypes.func.isRequired,
-  order: PropTypes.oneOf(["asc", "desc"]).isRequired,
-  orderBy: PropTypes.string.isRequired,
-};
+  order: PropTypes.oneOf(['asc', 'desc']).isRequired,
+  orderBy: PropTypes.string.isRequired
+}
 
 const EnhancedTableToolbar = ({
   search,
@@ -80,7 +80,7 @@ const EnhancedTableToolbar = ({
   handleChangeSearch,
   toggleShowFavorite,
   changeFilterValue,
-  showFavorite,
+  showFavorite
 }) => {
   return (
     <Toolbar className="tool-bar">
@@ -101,51 +101,49 @@ const EnhancedTableToolbar = ({
         showFavorite={showFavorite}
       />
     </Toolbar>
-  );
-};
+  )
+}
 
-export default function EnhancedTable(props) {
-  const {
-    handleChangeSearch,
-    changeFilterValue,
-    handleToggleElement,
-    toggleShowFavorite,
-    isFavorite,
-    search,
-    showFavorite,
-    priceData,
-    filter,
-  } = props;
+export default function EnhancedTable({
+  handleChangeSearch,
+  changeFilterValue,
+  handleToggleElement,
+  toggleShowFavorite,
+  isFavorite,
+  search,
+  showFavorite,
+  priceData = [],
+  filter
+}) {
+  const [order, setOrder] = React.useState('asc')
+  const [orderBy, setOrderBy] = React.useState('calories')
+  const [page, setPage] = React.useState(0)
+  const [dense, setDense] = React.useState(false)
+  const [rowsPerPage, setRowsPerPage] = React.useState(5)
 
-  const [order, setOrder] = React.useState("asc");
-  const [orderBy, setOrderBy] = React.useState("calories");
-  const [page, setPage] = React.useState(0);
-  const [dense, setDense] = React.useState(false);
-  const [rowsPerPage, setRowsPerPage] = React.useState(5);
-
-  const rows = priceData;
+  const rows = priceData
 
   const handleRequestSort = (_, property) => {
-    const isAsc = orderBy === property && order === "asc";
-    setOrder(isAsc ? "desc" : "asc");
-    setOrderBy(property);
-  };
+    const isAsc = orderBy === property && order === 'asc'
+    setOrder(isAsc ? 'desc' : 'asc')
+    setOrderBy(property)
+  }
 
   const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
+    setPage(newPage)
+  }
 
   const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(parseInt(event.target.value, 10));
-    setPage(0);
-  };
+    setRowsPerPage(parseInt(event.target.value, 10))
+    setPage(0)
+  }
 
   const handleChangeDense = (event) => {
-    setDense(event.target.checked);
-  };
+    setDense(event.target.checked)
+  }
 
   const emptyRows =
-    rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
+    rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage)
 
   return (
     <div className="enhanced-table">
@@ -162,7 +160,7 @@ export default function EnhancedTable(props) {
           <Table
             className="enhanced-table__table"
             aria-labelledby="tableTitle"
-            size={dense ? "small" : "medium"}
+            size={dense ? 'small' : 'medium'}
             aria-label="enhanced table"
           >
             <EnhancedTableHead
@@ -175,7 +173,7 @@ export default function EnhancedTable(props) {
               {stableSort(rows, getComparator(order, orderBy))
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => {
-                  const labelId = `enhanced-table-checkbox-${index}`;
+                  const labelId = `enhanced-table-checkbox-${index}`
 
                   return (
                     <TableRow
@@ -188,7 +186,7 @@ export default function EnhancedTable(props) {
                       <TableCell padding="checkbox">
                         <Checkbox
                           checked={isFavorite(row.id)}
-                          inputProps={{ "aria-labelledby": labelId }}
+                          inputProps={{ 'aria-labelledby': labelId }}
                         />
                       </TableCell>
                       <TableCell
@@ -202,7 +200,7 @@ export default function EnhancedTable(props) {
                       <TableCell align="right">{row.lastPrice}</TableCell>
                       <TableCell align="right">{`${row.change}%`}</TableCell>
                     </TableRow>
-                  );
+                  )
                 })}
               {emptyRows > 0 && (
                 <TableRow style={{ height: (dense ? 33 : 53) * emptyRows }}>
@@ -227,5 +225,5 @@ export default function EnhancedTable(props) {
         label="Dense padding"
       />
     </div>
-  );
+  )
 }

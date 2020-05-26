@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly Search Input 1`] = `
+<div>
+  <div
+    className="MuiFormControl-root MuiTextField-root"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
+      data-shrink={false}
+      htmlFor="outlined-basic"
+      id="outlined-basic-label"
+    >
+      Search
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        disabled={false}
+        id="outlined-basic"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+      />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-59 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-61"
+        >
+          <span>
+            Search
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly when there are no items 1`] = `
+<div>
+  <div
+    className="MuiFormControl-root MuiTextField-root"
+  >
+    <label
+      className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
+      data-shrink={false}
+      htmlFor="outlined-basic"
+      id="outlined-basic-label"
+    >
+      Search
+    </label>
+    <div
+      className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+      onClick={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        autoFocus={false}
+        className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        disabled={false}
+        id="outlined-basic"
+        onAnimationStart={[Function]}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        required={false}
+        type="text"
+      />
+      <fieldset
+        aria-hidden={true}
+        className="PrivateNotchedOutline-root-59 MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          className="PrivateNotchedOutline-legendLabelled-61"
+        >
+          <span>
+            Search
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</div>
+`;

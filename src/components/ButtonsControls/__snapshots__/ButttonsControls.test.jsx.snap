@@ -1,0 +1,769 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly ButtonsControls 1`] = `
+<div
+  className="MuiBox-root MuiBox-root-2 buttons-controls"
+>
+  <div
+    className="MuiBox-root MuiBox-root-3 buttons-controls__row"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-4 filters-controls"
+    >
+      <button
+        aria-label="favorites"
+        className="MuiButtonBase-root MuiIconButton-root filters-controls__favorite MuiIconButton-colorSecondary"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+            />
+          </svg>
+        </span>
+      </button>
+      <div
+        className="MuiButtonGroup-root filters-controls__buttons-group MuiButtonGroup-disableElevation MuiButtonGroup-contained"
+        role="group"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContained MuiButton-containedSizeSmall MuiButton-sizeSmall MuiButton-disableElevation"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            BNB
+          </span>
+        </button>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContained MuiButton-containedSizeSmall MuiButton-sizeSmall MuiButton-disableElevation"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            BTC
+          </span>
+        </button>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-79 filters-controls__selects-group"
+      >
+        <div
+          className="MuiFormControl-root filters-controls__select"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            id="alts-select-label"
+          >
+            ALTS
+          </label>
+          <div
+            className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+            onClick={[Function]}
+          >
+            <div
+              aria-haspopup="listbox"
+              aria-labelledby="alts-select-label alts-select"
+              className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+              id="alts-select"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <span
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "&#8203;",
+                  }
+                }
+              />
+            </div>
+            <input
+              onAnimationStart={[Function]}
+              type="hidden"
+            />
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSelect-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="MuiFormControl-root filters-controls__select"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            id="usds-select-label"
+          >
+            USDS
+          </label>
+          <div
+            className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+            onClick={[Function]}
+          >
+            <div
+              aria-haspopup="listbox"
+              aria-labelledby="usds-select-label usds-select"
+              className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+              id="usds-select"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <span
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "&#8203;",
+                  }
+                }
+              />
+            </div>
+            <input
+              onAnimationStart={[Function]}
+              type="hidden"
+            />
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSelect-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-150 buttons-controls__row"
+  >
+    <div>
+      <div
+        className="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
+          data-shrink={false}
+          htmlFor="outlined-basic"
+          id="outlined-basic-label"
+        >
+          Search
+        </label>
+        <div
+          className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+          onClick={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            autoFocus={false}
+            className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+            disabled={false}
+            id="outlined-basic"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            type="text"
+          />
+          <fieldset
+            aria-hidden={true}
+            className="PrivateNotchedOutline-root-167 MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              className="PrivateNotchedOutline-legendLabelled-169"
+            >
+              <span>
+                Search
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="position"
+      className="MuiFormGroup-root RadioButtonGroup buttons-controls__radio-group MuiFormGroup-row"
+      defaultValue="change"
+      role="radiogroup"
+    >
+      <label
+        className="MuiFormControlLabel-root MuiFormControlLabel-root"
+      >
+        <span
+          aria-disabled={false}
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-184 MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-checked-185 Mui-checked MuiIconButton-colorPrimary"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <input
+              checked={true}
+              className="PrivateSwitchBase-input-187"
+              name="position"
+              onChange={[Function]}
+              type="radio"
+              value="change"
+            />
+            <div
+              className="PrivateRadioButtonIcon-root-188 PrivateRadioButtonIcon-checked-190"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-189"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+        <span
+          className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        >
+          Change
+        </span>
+      </label>
+      <label
+        className="MuiFormControlLabel-root"
+      >
+        <span
+          aria-disabled={false}
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-184 MuiRadio-root MuiRadio-colorPrimary MuiIconButton-colorPrimary"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-187"
+              name="position"
+              onChange={[Function]}
+              type="radio"
+              value="volume"
+            />
+            <div
+              className="PrivateRadioButtonIcon-root-188"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-189"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+        <span
+          className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        >
+          Volume
+        </span>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly Search Input 1`] = `
+<div
+  className="MuiBox-root MuiBox-root-2 buttons-controls"
+>
+  <div
+    className="MuiBox-root MuiBox-root-3 buttons-controls__row"
+  >
+    <div
+      className="MuiBox-root MuiBox-root-4 filters-controls"
+    >
+      <button
+        aria-label="favorites"
+        className="MuiButtonBase-root MuiIconButton-root filters-controls__favorite MuiIconButton-colorSecondary"
+        disabled={false}
+        onBlur={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-colorSecondary"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"
+            />
+          </svg>
+        </span>
+      </button>
+      <div
+        className="MuiButtonGroup-root filters-controls__buttons-group MuiButtonGroup-disableElevation MuiButtonGroup-contained"
+        role="group"
+      >
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContained MuiButton-containedSizeSmall MuiButton-sizeSmall MuiButton-disableElevation"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            BNB
+          </span>
+        </button>
+        <button
+          className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButtonGroup-grouped MuiButtonGroup-groupedHorizontal MuiButtonGroup-groupedContained MuiButtonGroup-groupedContainedHorizontal MuiButtonGroup-groupedContained MuiButton-containedSizeSmall MuiButton-sizeSmall MuiButton-disableElevation"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiButton-label"
+          >
+            BTC
+          </span>
+        </button>
+      </div>
+      <div
+        className="MuiBox-root MuiBox-root-79 filters-controls__selects-group"
+      >
+        <div
+          className="MuiFormControl-root filters-controls__select"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            id="alts-select-label"
+          >
+            ALTS
+          </label>
+          <div
+            className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+            onClick={[Function]}
+          >
+            <div
+              aria-haspopup="listbox"
+              aria-labelledby="alts-select-label alts-select"
+              className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+              id="alts-select"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <span
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "&#8203;",
+                  }
+                }
+              />
+            </div>
+            <input
+              onAnimationStart={[Function]}
+              type="hidden"
+            />
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSelect-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          className="MuiFormControl-root filters-controls__select"
+        >
+          <label
+            className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+            data-shrink={false}
+            id="usds-select-label"
+          >
+            USDS
+          </label>
+          <div
+            className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+            onClick={[Function]}
+          >
+            <div
+              aria-haspopup="listbox"
+              aria-labelledby="usds-select-label usds-select"
+              className="MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiInputBase-input MuiInput-input"
+              id="usds-select"
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onMouseDown={[Function]}
+              role="button"
+              tabIndex={0}
+            >
+              <span
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "&#8203;",
+                  }
+                }
+              />
+            </div>
+            <input
+              onAnimationStart={[Function]}
+              type="hidden"
+            />
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root MuiSelect-icon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M7 10l5 5 5-5z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="MuiBox-root MuiBox-root-150 buttons-controls__row"
+  >
+    <div>
+      <div
+        className="MuiFormControl-root MuiTextField-root"
+      >
+        <label
+          className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
+          data-shrink={false}
+          htmlFor="outlined-basic"
+          id="outlined-basic-label"
+        >
+          Search
+        </label>
+        <div
+          className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+          onClick={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            autoFocus={false}
+            className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+            disabled={false}
+            id="outlined-basic"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            required={false}
+            type="text"
+          />
+          <fieldset
+            aria-hidden={true}
+            className="PrivateNotchedOutline-root-167 MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              className="PrivateNotchedOutline-legendLabelled-169"
+            >
+              <span>
+                Search
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-label="position"
+      className="MuiFormGroup-root RadioButtonGroup buttons-controls__radio-group MuiFormGroup-row"
+      defaultValue="change"
+      role="radiogroup"
+    >
+      <label
+        className="MuiFormControlLabel-root MuiFormControlLabel-root"
+      >
+        <span
+          aria-disabled={false}
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-184 MuiRadio-root MuiRadio-colorPrimary PrivateSwitchBase-checked-185 Mui-checked MuiIconButton-colorPrimary"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <input
+              checked={true}
+              className="PrivateSwitchBase-input-187"
+              name="position"
+              onChange={[Function]}
+              type="radio"
+              value="change"
+            />
+            <div
+              className="PrivateRadioButtonIcon-root-188 PrivateRadioButtonIcon-checked-190"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-189"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+        <span
+          className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        >
+          Change
+        </span>
+      </label>
+      <label
+        className="MuiFormControlLabel-root"
+      >
+        <span
+          aria-disabled={false}
+          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-184 MuiRadio-root MuiRadio-colorPrimary MuiIconButton-colorPrimary"
+          onBlur={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <input
+              checked={false}
+              className="PrivateSwitchBase-input-187"
+              name="position"
+              onChange={[Function]}
+              type="radio"
+              value="volume"
+            />
+            <div
+              className="PrivateRadioButtonIcon-root-188"
+            >
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                />
+              </svg>
+              <svg
+                aria-hidden={true}
+                className="MuiSvgIcon-root PrivateRadioButtonIcon-layer-189"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"
+                />
+              </svg>
+            </div>
+          </span>
+        </span>
+        <span
+          className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        >
+          Volume
+        </span>
+      </label>
+    </div>
+  </div>
+</div>
+`;

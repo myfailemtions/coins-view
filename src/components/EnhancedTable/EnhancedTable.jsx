@@ -16,12 +16,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
 
 import ButtonsControls from "../ButtonsControls/ButtonsControls";
-import {
-  getComparator,
-  stableSort,
-  descendingComparator,
-  formatLastPrice
-} from "../../utils/helpers";
+import { getComparator, stableSort } from "../../utils/helpers";
 
 import "./style.scss";
 
@@ -36,8 +31,7 @@ const headCells = [
   { id: "change", numeric: true, disablePadding: false, label: "Change" },
 ];
 
-function EnhancedTableHead(props) {
-  const { order, orderBy, onRequestSort } = props;
+const EnhancedTableHead = ({ order, orderBy, onRequestSort }) => {
   const createSortHandler = (property) => (event) => {
     onRequestSort(event, property);
   };
@@ -48,20 +42,20 @@ function EnhancedTableHead(props) {
         <TableCell padding="checkbox">
           <Checkbox disabled />
         </TableCell>
-        {headCells.map((headCell) => (
+        {headCells.map(({ id, numeric, disablePadding, label }) => (
           <TableCell
-            key={headCell.id}
-            align={headCell.numeric ? "right" : "left"}
-            padding={headCell.disablePadding ? "none" : "default"}
-            sortDirection={orderBy === headCell.id ? order : false}
+            key={id}
+            align={numeric ? "right" : "left"}
+            padding={disablePadding ? "none" : "default"}
+            sortDirection={orderBy === id ? order : false}
           >
             <TableSortLabel
-              active={orderBy === headCell.id}
-              direction={orderBy === headCell.id ? order : "asc"}
-              onClick={createSortHandler(headCell.id)}
+              active={orderBy === id}
+              direction={orderBy === id ? order : "asc"}
+              onClick={createSortHandler(id)}
             >
-              {headCell.label}
-              {orderBy === headCell.id ? (
+              {label}
+              {orderBy === id ? (
                 <span className="visuallyHidden">
                   {order === "desc" ? "sorted descending" : "sorted ascending"}
                 </span>
@@ -72,7 +66,7 @@ function EnhancedTableHead(props) {
       </TableRow>
     </TableHead>
   );
-}
+};
 
 EnhancedTableHead.propTypes = {
   onRequestSort: PropTypes.func.isRequired,
@@ -80,16 +74,14 @@ EnhancedTableHead.propTypes = {
   orderBy: PropTypes.string.isRequired,
 };
 
-const EnhancedTableToolbar = (props) => {
-  const {
-    search,
-    filter,
-    handleChangeSearch,
-    toggleShowFavorite,
-    changeFilterValue,
-    showFavorite
-  } = props
-
+const EnhancedTableToolbar = ({
+  search,
+  filter,
+  handleChangeSearch,
+  toggleShowFavorite,
+  changeFilterValue,
+  showFavorite,
+}) => {
   return (
     <Toolbar className="tool-bar">
       <Typography
@@ -122,8 +114,8 @@ export default function EnhancedTable(props) {
     search,
     showFavorite,
     priceData,
-    filter
-  } = props
+    filter,
+  } = props;
 
   const [order, setOrder] = React.useState("asc");
   const [orderBy, setOrderBy] = React.useState("calories");
@@ -131,7 +123,7 @@ export default function EnhancedTable(props) {
   const [dense, setDense] = React.useState(false);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
-  const rows = priceData
+  const rows = priceData;
 
   const handleRequestSort = (_, property) => {
     const isAsc = orderBy === property && order === "asc";
@@ -194,7 +186,10 @@ export default function EnhancedTable(props) {
                       key={row.id}
                     >
                       <TableCell padding="checkbox">
-                        <Checkbox checked={isFavorite(row.id)} inputProps={{ "aria-labelledby": labelId }} />
+                        <Checkbox
+                          checked={isFavorite(row.id)}
+                          inputProps={{ "aria-labelledby": labelId }}
+                        />
                       </TableCell>
                       <TableCell
                         component="th"

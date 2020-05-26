@@ -1,16 +1,21 @@
-import React from 'react';
+import React from "react";
 
-import Box from '@material-ui/core/Box';
+import Box from "@material-ui/core/Box";
 
-import FiltersControls from '../FiltersControls/FiltersControls';
-import RadioButtonsGroup from '../RadioButtonsGroup/RadioButtonsGroup';
-import SearchInput from '../SearchInput/SearchInput';
+import FiltersControls from "../FiltersControls/FiltersControls";
+import RadioButtonsGroup from "../RadioButtonsGroup/RadioButtonsGroup";
+import SearchInput from "../SearchInput/SearchInput";
 
-import './style.scss';
+import "./style.scss";
 
-export default function ButtonsControls(props) {
-  const {search, filter, handleChangeSearch, toggleShowFavorite,  changeFilterValue, showFavorite} = props
-
+export default function ButtonsControls({
+  search,
+  filter,
+  handleChangeSearch,
+  toggleShowFavorite,
+  changeFilterValue,
+  showFavorite,
+}) {
   return (
     <Box className="buttons-controls">
       <Box className="buttons-controls__row">

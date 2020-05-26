@@ -6,16 +6,16 @@ import EnhancedTable from '../components/EnhancedTable/EnhancedTable'
 import './App.scss'
 
 const formatDataForTable = (data) => {
-  return data.map(item => ({
+  return data.map((item) => ({
     id: item.id,
     pair: `${item.firstValueOfPair}/${item.secondValueOfPair}`,
     lastPrice: item.currentPrice,
-    change: (item.currentPrice / item.prevPrice * 100 - 100).toFixed(2)
-  }));
+    change: ((item.currentPrice / item.prevPrice) * 100 - 100).toFixed(2)
+  }))
 }
 
 const getFilterData = (arrayData, filter) => {
-  return arrayData.filter(item => item.secondValueOfPair === filter)
+  return arrayData.filter((item) => item.secondValueOfPair === filter)
 }
 
 const App = () => {
@@ -29,7 +29,7 @@ const App = () => {
 
   useEffect(() => {
     const serachFilter = (arr) => {
-      const fiterArr = arr.filter(item => {
+      const fiterArr = arr.filter((item) => {
         return item.pair.toLowerCase().includes(search.toLowerCase().trim())
       })
 
@@ -42,7 +42,6 @@ const App = () => {
   useEffect(() => {
     const filtredArr = getFilterData(decryptedData, filter)
     setFilterData(formatDataForTable(filtredArr))
-
   }, [filter, decryptedData])
 
   useEffect(() => {
@@ -50,37 +49,35 @@ const App = () => {
       const products = await fetchProducts()
       console.log(products)
       fetchPrice().onmessage = ({ data }) => {
-        const mergedData = mergeData({ products, price: JSON.parse(data) });
+        const mergedData = mergeData({ products, price: JSON.parse(data) })
         const decryptedData = formatData(mergedData)
         setDecryptedData(decryptedData)
       }
     }
-    fetchData();
+    fetchData()
   }, [])
 
-  const handleChangeSearch = (event) => {
-    setSearch(event.target.value);
-  }
+  const handleChangeSearch = ({ target: { value } }) => value
 
   const changeFilterValue = (value) => {
     setFilter(value)
   }
 
   const handleToggleElement = (event, id) => {
-    const element = favoriteList.find(item => item.id === id);
+    const element = favoriteList.find((item) => item.id === id)
 
     if (element) {
-      const updateFavoriteList = favoriteList.filter(item => item.id !== id);
+      const updateFavoriteList = favoriteList.filter((item) => item.id !== id)
       setFavoriteList(updateFavoriteList)
     } else {
-      const curentElement = serachFilterData.find(item => item.id === id);
+      const curentElement = serachFilterData.find((item) => item.id === id)
       favoriteList.push(curentElement)
       setFavoriteList(favoriteList)
     }
-  };
+  }
 
   const isFavorite = (id) => {
-    return !!favoriteList.find(item => item.id === id);
+    return !!favoriteList.find((item) => item.id === id)
   }
 
   const toggleShowFavorite = () => {

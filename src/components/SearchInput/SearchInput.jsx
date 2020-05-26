@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import TextField from '@material-ui/core/TextField';
+import TextField from "@material-ui/core/TextField";
 
-export default function SearchInput(props) {
-  const {className, search, handleChangeSearch} = props;
-
+export default function SearchInput({ className, search, handleChangeSearch }) {
   return (
     <div className={className}>
       <TextField
